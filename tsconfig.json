@@ -10,9 +10,11 @@
 
         "module": "esnext",
         "moduleResolution": "bundler",
-        // "rootDir": "./",
+        "rootDir": "./",
         // "baseUrl": "./",
-        // "paths": {},
+        "paths": {
+            "~/*": ["./src/*"]
+        },
         // "rootDirs": [],
         // "typeRoots": [],
         // "types": [],
@@ -42,16 +44,9 @@
         // "preserveSymlinks": true,
         "forceConsistentCasingInFileNames": true,
 
+        "erasableSyntaxOnly": true,
+
         "strict": true,
-        // "noImplicitAny": true,
-        // "strictNullChecks": true,
-        // "strictFunctionTypes": true,
-        // "strictBindCallApply": true,
-        // "strictPropertyInitialization": true,
-        // "strictBuiltinIteratorReturn": true,
-        // "noImplicitThis": true,
-        // "useUnknownInCatchVariables": true,
-        // "alwaysStrict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "exactOptionalPropertyTypes": true,
